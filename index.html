@@ -37,7 +37,7 @@
     }
     header {
       background-color: var(--secondary);
-      padding: 1rem 0;
+      padding: 1.2rem 0;
       box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
       position: sticky;
       top: 0;
@@ -78,7 +78,7 @@
       flex-wrap: wrap;
     }
     .hero img {
-      width: 220px;
+      width: 420px;
       height: auto;
       animation: pulse 3s infinite;
     }
@@ -204,7 +204,7 @@
 
     /* Parallax effect section */
     .parallax-section {
-      background: url('https://images.unsplash.com/photo-1506744038136-46273834b3fb?ixlib=rb-4.0.3&auto=format&fit=crop&w=1950&q=80')
+      background: url('https://images.unsplash.com/photo-1464618663641-bbdd760ae84a?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')
         no-repeat center center / cover;
       position: relative;
       color: var(--text);
@@ -260,7 +260,7 @@
 <body>
   <header>
     <div class="container nav-container">
-      <div class="logo">GENINHO</div>
+      <div class="logo">gen1nh</div>
       <nav>
         <ul>
           <li><a href="#sobre">Sobre</a></li>
@@ -274,8 +274,8 @@
 
   <section class="hero container">
     <img
-      src="https://www.svgrepo.com/show/439218/avatar-boy.svg"
-      alt="Avatar Geninho"
+      src="https://images.unsplash.com/photo-1562505299-a92c9a1c4f37?q=80&w=735&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+      alt=""
     />
     <div class="hero-text">
       <h1>Geninho | UI/UX Designer & Front-end</h1>
@@ -443,7 +443,7 @@
       const parallax = document.querySelector(".parallax-section");
       let offset = window.pageYOffset;
       if (parallax) {
-        parallax.style.backgroundPositionY = offset * 0.57 + "px";
+        parallax.style.backgroundPositionY = offset * 0. + "px";
       }
       // sombra no header ao rolar
       document.querySelector("header").style.boxShadow =
