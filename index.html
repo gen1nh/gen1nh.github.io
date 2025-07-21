@@ -204,7 +204,7 @@
 
     /* Parallax effect section */
     .parallax-section {
-      background: url('https://images.unsplash.com/photo-1464618663641-bbdd760ae84a?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')
+      background: url('https://images.unsplash.com/photo-1506744038136-46273834b3fb?ixlib=rb-4.0.3&auto=format&fit=crop&w=1950&q=80')
         no-repeat center center / cover;
       position: relative;
       color: var(--text);
@@ -443,7 +443,7 @@
       const parallax = document.querySelector(".parallax-section");
       let offset = window.pageYOffset;
       if (parallax) {
-        parallax.style.backgroundPositionY = offset * 0. + "px";
+        parallax.style.backgroundPositionY = offset * -0.4 + "px";
       }
       // sombra no header ao rolar
       document.querySelector("header").style.boxShadow =
