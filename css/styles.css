@@ -1,0 +1,238 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Outfit:wght@100..900&display=swap");
+
+:root {
+  --font-primary: "Outfit", sans-serif;
+  --font-secondary: "Inter", sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+  font-family: "Outfit", sans-serif;
+  font-weight: 500;
+}
+
+/* Removido o margin fixo do html para permitir o controle pelo wrapper */
+html {
+  margin: 0;
+}
+
+/* Container principal para centralizar e adicionar espaçamento */
+.main-wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+.navigation {
+  margin-top: 32px;
+  margin-bottom: 120px;
+}
+
+.navigation ul {
+  list-style: none;
+  gap: 24px;
+  display: flex;
+  justify-content: flex-end;
+  padding: 24px;
+  font-weight: 500;
+  font-size: 24px;
+  color: #141414;
+}
+
+#home {
+  color: #222222;
+}
+
+#home:hover{
+  color: gray;
+}
+
+#projects:hover{
+  color: gray;
+}
+
+#about-me:hover{
+  color: gray;
+}
+
+.nav {
+  display: flex;
+  flex-direction: row;
+}
+
+.nav a {
+  font-family: var(--font-secondary);
+  font-size: 18px;
+  font-weight: 400;
+  color: #222222;
+}
+
+.hero {
+  display: block;
+  text-align: center;
+  margin-bottom: 120px;
+}
+
+.Geninho {
+  background-color: #fbbd055e;
+}
+
+.Geninho:hover {
+  color: white;
+  background-color: white;
+  text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black,
+    1px 1px 0 black;
+}
+
+.text-outline-fill {
+  color: white;
+  text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black,
+    1px 1px 0 black;
+}
+
+#text-1:hover {
+  color: rgb(0, 0, 0);
+  background-color: #ff726280;
+  text-shadow: -1px -1px 0 rgba(255, 255, 255, 0),
+    1px -1px 0 rgba(255, 255, 255, 0), -1px 1px 0 rgba(255, 255, 255, 0),
+    1px 1px 0 rgba(255, 255, 255, 0);
+}
+
+#text-2:hover {
+  color: rgb(0, 0, 0);
+  background-color: #a159ff7c;
+  text-shadow: -1px -1px 0 rgba(255, 255, 255, 0),
+    1px -1px 0 rgba(255, 255, 255, 0), -1px 1px 0 rgba(255, 255, 255, 0),
+    1px 1px 0 rgba(255, 255, 255, 0);
+}
+
+#text-3:hover {
+  color: rgb(0, 0, 0);
+  background-color: #0acf8381;
+  text-shadow: -1px -1px 0 rgba(255, 255, 255, 0),
+    1px -1px 0 rgba(255, 255, 255, 0), -1px 1px 0 rgba(255, 255, 255, 0),
+    1px 1px 0 rgba(255, 255, 255, 0);
+}
+
+#text-4:hover {
+  color: rgb(0, 0, 0);
+  background-color: #1abdfe81;
+  text-shadow: -1px -1px 0 rgba(255, 255, 255, 0),
+    1px -1px 0 rgba(255, 255, 255, 0), -1px 1px 0 rgba(255, 255, 255, 0),
+    1px 1px 0 rgba(255, 255, 255, 0);
+}
+
+.content-hero {
+  display: flex;
+  text-align: start;
+  font-size: 2rem; /* Tamanho da fonte ajustado para ser mais flexível */
+}
+
+.text-primary {
+  margin-bottom: 16px;
+}
+
+.text-hero {
+  margin-top: 24px;
+  text-align: start;
+}
+
+.text-hero p {
+  font-weight: 300;
+}
+
+.text-title-projects h3 {
+  color: gray;
+  font-size: 16px;
+  font-weight: 300;
+  padding-bottom: 24px;
+  padding-left: 24px;
+}
+
+.project-card {
+  display: flex;
+  flex-direction: row;
+  /* Altura fixa removida */
+  height: auto;
+  gap: 1rem;
+  margin-bottom: 3rem;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  background-color: #fff;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.project-info strong {
+  font-weight: 500;
+}
+
+.project-info p {
+  font-weight: 400;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.12);
+}
+
+.project-img img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 12px 0 0 12px;
+}
+
+.project-info {
+  flex: 1;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.project-info h4 {
+  font-family: var(--font-primary);
+  margin-bottom: 0.75rem;
+  font-size: 1.5rem;
+  color: #111;
+}
+
+.project-info p {
+  font-family: var(--font-secondary);
+  color: #222222;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
+.project-info a {
+  text-decoration: none;
+  color: #239261;
+  font-weight: 600;
+  align-self: flex-start;
+}
+
+.footer {
+  border-top: #bdbdbd42 1px solid;
+  margin-top: 120px;
+  /* Altura fixa removida */
+  height: auto;
+  padding: 60px 0; /* Adicionado padding para espaçamento */
+  display: flex;
+  justify-content: center;
+}
+
+.icons-footer {
+  height: 22px;
+}
+
+.content-footer {
+  align-items: center;
+  align-content: center;
+  display: flex;
+  flex-direction: row;
+  gap: 24px;
+}
