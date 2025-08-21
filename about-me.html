@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="pt-br4">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/about-me.css" />
+    <link rel="stylesheet" href="./css/responsive.css" />
+  </head>
+
+  <body>
+    <div class="section-black">
+      <nav class="navigation">
+        <div class="main-wrapper">
+          <ul class="nav">
+            <li><a href="index.html" id="home">Home</a></li>
+            <li><a href="#" id="projects">Projects</a></li>
+            <li><a href="about-me.html" id="about-me">About me</a></li>
+          </ul>
+        </div>
+      </nav>
+
+      <div class="hero">
+        <div class="main-wrapper">
+          <div class="content-hero">
+            <img src="./assets/img-profile.jpg" alt="foto de perfil" />
+            <h1>
+              <div class="text-primary">
+                Hi, I'm <span class="Geninho">Geninho</span>
+              </div>
+              I <span class="text-outline-fill" id="text-1">design</span>,
+              <span class="text-outline-fill" id="text-2">code</span>,
+              <span class="text-outline-fill" id="text-3">create</span> &
+              <span class="text-outline-fill" id="text-4">learn</span>.
+            </h1>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <section class="experience-section">
+      <h1>Experience</h1>
+      <p>Employment History</p>
+
+      <div class="experience">
+        <div class="employment-history">
+          <div class="history-content">
+            <div class="experience-icon">
+              <img src="assets/icon-exp01.svg" alt="Freelancer Icon" />
+            </div>
+            <div class="experience-item-content">
+              <div class="experience-item">
+                <div class="experience-info">
+                  <h2>Freelancer</h2>
+                  <p class="experience-period">Self-employed · Remote</p>
+                </div>
+              </div>
+              <div class="experience-item">
+                <div class="experience-info">
+                  <h2>Product Designer</h2>
+                  <p class="experience-period">Out 2024 - Present</p>
+                  <p class="experience-desc collapsed">
+                    As a Product Designer with over a decade of experience, I
+                    specialize in crafting intuitive digital experiences for
+                    innovative startups. My expertise spans both web and native
+                    mobile apps (iOS and Android).
+                  </p>
+                  <button class="toggle-desc">+ Full description</button>
+                </div>
+              </div>
+              <div class="experience-item">
+                <div class="experience-info">
+                  <h2>Webflow Developer</h2>
+                  <p class="experience-period">May 2019 - Present</p>
+                  <p class="experience-desc collapsed">
+                    With a foundation in web design since 2014 and website
+                    development since 2016, I found my perfect tool match in
+                    Webflow in 2019. I leverage Webflow's powerful capabilities to
+                    create sophisticated digital experiences.
+                  </p>
+                  <button class="toggle-desc">+ Full description</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+              <div class="employment-history">
+          <div class="history-content">
+            <div class="experience-icon">
+              <img src="assets/icon-exp01.svg" alt="Freelancer Icon" />
+            </div>
+            <div class="experience-item-content">
+              <div class="experience-item">
+                <div class="experience-info">
+                  <h2>Freelancer</h2>
+                  <p class="experience-period">Self-employed · Remote</p>
+                </div>
+              </div>
+              <div class="experience-item">
+                <div class="experience-info">
+                  <h2>Product Designer</h2>
+                  <p class="experience-period">Out 2024 - Present</p>
+                  <p class="experience-desc collapsed">
+                    As a Product Designer with over a decade of experience, I
+                    specialize in crafting intuitive digital experiences for
+                    innovative startups. My expertise spans both web and native
+                    mobile apps (iOS and Android).
+                  </p>
+                  <button class="toggle-desc">+ Full description</button>
+                </div>
+              </div>
+              <div class="experience-item">
+                <div class="experience-info">
+                  <h2>Webflow Developer</h2>
+                  <p class="experience-period">May 2019 - Present</p>
+                  <p class="experience-desc collapsed">
+                    With a foundation in web design since 2014 and website
+                    development since 2016, I found my perfect tool match in
+                    Webflow in 2019. I leverage Webflow's powerful capabilities to
+                    create sophisticated digital experiences.
+                  </p>
+                  <button class="toggle-desc">+ Full description</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+    </section>
+
+    <script>
+      const buttons = document.querySelectorAll(".toggle-desc");
+
+      buttons.forEach((btn) => {
+        btn.addEventListener("click", () => {
+          const desc = btn.previousElementSibling;
+          desc.classList.toggle("expanded");
+
+          if (desc.classList.contains("expanded")) {
+            btn.textContent = "- Show less";
+          } else {
+            btn.textContent = "+ Full description";
+          }
+        });
+      });
+    </script>
+  </body>
+</html>
