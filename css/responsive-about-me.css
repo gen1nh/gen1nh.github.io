@@ -1,0 +1,24 @@
+@media (max-width: 1024px) {
+
+    .content-hero{
+        flex-direction: column;
+    }
+
+  .experience-content {
+    flex-direction: column;
+    gap: 48px;
+  }
+
+  .experience-block{
+    width: 100%;
+    max-width: 724px;
+  }
+}
+
+/* RESPONSIVO */
+@media (max-width: 900px) {
+  .experience-content {
+    flex-direction: column;
+    gap: 48px;
+  }
+}
