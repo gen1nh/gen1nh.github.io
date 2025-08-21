@@ -55,6 +55,252 @@
 
 /* NAVIGATION */
 .navigation {
+  margin-bottom: 64px;
+  background-color: var(--color-black);
+}
+
+.navigation ul {
+  list-style: none;
+  gap: 32px;
+  display: flex;
+  justify-content: flex-end;
+  padding: 24px;
+  font-weight: 500;
+  font-size: 24px;
+}
+
+#home:hover {
+  color: var(--color-accent-2);
+}
+
+#projects:hover {
+  color: var(--color-accent-2);
+}
+
+#about-me:hover {
+  color: var(--color-accent-2);
+}
+
+.nav {
+  display: flex;
+  flex-direction: row;
+}
+
+.nav a {
+  font-family: var(--font-secondary);
+  font-size: 18px;
+  font-weight: 400;
+  color: var(--color-white);
+}
+
+/* HERO */
+.hero {
+  display: flex;
+  text-align: center;
+  margin-bottom: 120px;
+}
+
+.content-hero {
+  display: flex;
+  align-items: center;
+  font-size: 2.7rem;
+  gap: 78px;
+}
+
+.Geninho {
+  background-color: var(--color-accent-2);
+}
+
+.Geninho:hover {
+  color: var(--color-black);
+  background-color: var(--color-white);
+  text-shadow: -1px -1px 0 var(--color-black),
+    1px -1px 0 var(--color-black),
+    -1px 1px 0 var(--color-black),
+    1px 1px 0 var(--color-black);
+}
+
+.text-outline-fill {
+  color: var(--color-white);
+  text-shadow: -1px -1px 0 var(--color-black),
+    1px -1px 0 var(--color-black),
+    -1px 1px 0 var(--color-black),
+    1px 1px 0 var(--color-black);
+}
+
+#text-1:hover {
+  color: var(--color-black);
+  background-color: var(--color-accent-1);
+  text-shadow: none;
+}
+
+#text-2:hover {
+  color: var(--color-black);
+  background-color: var(--color-accent-2);
+  text-shadow: none;
+}
+
+#text-3:hover {
+  color: var(--color-black);
+  background-color: var(--color-accent-3);
+  text-shadow: none;
+}
+
+#text-4:hover {
+  color: var(--color-black);
+  background-color: var(--color-accent-4);
+  text-shadow: none;
+}
+
+.content-hero {
+  display: flex;
+  text-align: start;
+  align-items: center;
+  font-size: 2rem;
+  padding-bottom: 64px;
+}
+
+.text-primary {
+  margin-bottom: 16px;
+  text-align: end;
+}
+
+.text-hero {
+  margin-top: 24px;
+  text-align: start;
+}
+
+.text-hero p {
+  font-weight: 300;
+}
+
+.experience-section {
+  max-width: 1200px;
+  margin: 0 auto;
+  font-family: 'Inter', sans-serif;
+  padding: 2rem;
+}
+
+.experience-section h1 {
+  font-size: 2rem;
+  margin-bottom: 0.2rem;
+}
+
+.experience-section p {
+  margin-bottom: 2rem;
+  color: #555;
+}
+
+.experience-item {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 2rem;
+  gap: 1rem;
+}
+
+.experience-icon img {
+  width: 50px;
+  height: 50px;
+  object-fit: contain;
+}
+
+.experience-info h2 {
+  margin: 0;
+  font-size: 1.2rem;
+}
+
+.experience-period {
+  font-size: 0.9rem;
+  color: #777;
+  margin-bottom: 0.5rem;
+}
+
+.experience-desc {
+  display: none;
+  margin-bottom: 0.5rem;
+}
+
+.toggle-desc {
+  background: none;
+  border: none;
+  color: #690099;
+  cursor: pointer;
+  font-size: 0.9rem;
+  padding: 0;
+}
+
+.experience-desc.expanded {
+  display: block;
+}
+
+.history-content {
+  display: flex;
+  gap: 32px;
+}
+
+.experience{
+  padding-top: 64px;
+  display: flex;
+  justify-content: space-between;
+
+}
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Outfit:wght@100..900&display=swap");
+
+:root {
+  /* FONTES */
+  --font-primary: "Outfit", sans-serif;
+  --font-secondary: "Inter", sans-serif;
+
+  /* CORES PRINCIPAIS */
+  --color-black: #141414;
+  --color-white: #ffffff;
+
+  /* ACENTOS */
+  --color-gray: gray;
+  --color-accent-1: #ff726280;
+  --color-accent-2: #a159ff7c;
+  --color-accent-3: #0acf8381;
+  --color-accent-4: #1abdfe81;
+  --color-highlight: #fbbd055e;
+  --color-green: #239261;
+
+  /* BORDAS E SOMBRAS */
+  --color-border: #bdbdbd42;
+  --shadow-light: 0 10px 30px rgba(0, 0, 0, 0.08);
+  --shadow-hover: 0 15px 40px rgba(0, 0, 0, 0.12);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+  font-family: var(--font-primary);
+  font-weight: 500;
+}
+
+/* Container centralizado */
+.main-wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 32px 24px;
+}
+
+/* SEÇÕES DE FUNDO */
+.section-black {
+  background-color: var(--color-black);
+  color: var(--color-white);
+  width: 100%;
+}
+
+.section-white {
+  background-color: var(--color-white);
+  color: var(--color-black);
+  width: 100%;
+}
+
+/* NAVIGATION */
+.navigation {
   margin-bottom: 120px;
 }
 

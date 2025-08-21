@@ -1,8 +1,27 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Outfit:wght@100..900&display=swap");
 
 :root {
+  /* FONTES */
   --font-primary: "Outfit", sans-serif;
   --font-secondary: "Inter", sans-serif;
+
+  /* CORES PRINCIPAIS */
+  --color-black: #141414;
+  --color-white: #ffffff;
+
+  /* ACENTOS */
+  --color-gray: gray;
+  --color-accent-1: #ff726280;
+  --color-accent-2: #a159ff7c;
+  --color-accent-3: #0acf8381;
+  --color-accent-4: #1abdfe81;
+  --color-highlight: #fbbd055e;
+  --color-green: #239261;
+
+  /* BORDAS E SOMBRAS */
+  --color-border: #bdbdbd42;
+  --shadow-light: 0 10px 30px rgba(0, 0, 0, 0.08);
+  --shadow-hover: 0 15px 40px rgba(0, 0, 0, 0.12);
 }
 
 * {
@@ -10,20 +29,29 @@
   padding: 0;
   text-decoration: none;
   list-style: none;
-  font-family: "Outfit", sans-serif;
+  font-family: var(--font-primary);
   font-weight: 500;
-}
-
-/* Removido o margin fixo do html para permitir o controle pelo wrapper */
-html {
-  margin: 0;
 }
 
 /* Container centralizado */
 .main-wrapper {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 32px 24px;
+  padding: 0 24px;
+}
+
+/* SEÇÕES DE FUNDO */
+.section-black {
+  background-color: var(--color-white);
+  color: var(--color-black);
+  width: 100%;
+  margin-top: 32px;
+}
+
+.section-white {
+  background-color: var(--color-white);
+  color: var(--color-black);
+  width: 100%;
 }
 
 /* NAVIGATION */
@@ -31,41 +59,31 @@ html {
   margin-bottom: 120px;
 }
 
-.nav {
+.navigation ul {
+  list-style: none;
+  gap: 32px;
   display: flex;
   justify-content: flex-end;
-  gap: 32px;
-  padding: 24px 0;
+  padding: 24px;
   font-weight: 500;
+  font-size: 24px;
+  color: var(--color-black);
 }
-
-.nav a {
-  font-family: var(--font-secondary);
-  font-size: 18px;
-  font-weight: 400;
-  color: var(--color-white);
-  transition: 0.3s;
-}
-
-.nav a:hover {
-  color: var(--color-accent-2);
-}
-
 
 #home {
-  color: #222222;
+  color: var(--color-black);
 }
 
-#home:hover{
-  color: gray;
+#home:hover {
+  color: var(--color-gray);
 }
 
-#projects:hover{
-  color: gray;
+#projects:hover {
+  color: var(--color-gray);
 }
 
-#about-me:hover{
-  color: gray;
+#about-me:hover {
+  color: var(--color-gray);
 }
 
 .nav {
@@ -77,9 +95,10 @@ html {
   font-family: var(--font-secondary);
   font-size: 18px;
   font-weight: 400;
-  color: #222222;
+  color: var(--color-black);
 }
 
+/* HERO */
 .hero {
   display: block;
   text-align: center;
@@ -87,58 +106,54 @@ html {
 }
 
 .Geninho {
-  background-color: #fbbd055e;
+  background-color: var(--color-highlight);
 }
 
 .Geninho:hover {
-  color: white;
-  background-color: white;
-  text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black,
-    1px 1px 0 black;
+  color: var(--color-white);
+  background-color: var(--color-white);
+  text-shadow: -1px -1px 0 var(--color-black),
+    1px -1px 0 var(--color-black),
+    -1px 1px 0 var(--color-black),
+    1px 1px 0 var(--color-black);
 }
 
 .text-outline-fill {
-  color: white;
-  text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black,
-    1px 1px 0 black;
+  color: var(--color-white);
+  text-shadow: -1px -1px 0 var(--color-black),
+    1px -1px 0 var(--color-black),
+    -1px 1px 0 var(--color-black),
+    1px 1px 0 var(--color-black);
 }
 
 #text-1:hover {
-  color: rgb(0, 0, 0);
-  background-color: #ff726280;
-  text-shadow: -1px -1px 0 rgba(255, 255, 255, 0),
-    1px -1px 0 rgba(255, 255, 255, 0), -1px 1px 0 rgba(255, 255, 255, 0),
-    1px 1px 0 rgba(255, 255, 255, 0);
+  color: var(--color-black);
+  background-color: var(--color-accent-1);
+  text-shadow: none;
 }
 
 #text-2:hover {
-  color: rgb(0, 0, 0);
-  background-color: #a159ff7c;
-  text-shadow: -1px -1px 0 rgba(255, 255, 255, 0),
-    1px -1px 0 rgba(255, 255, 255, 0), -1px 1px 0 rgba(255, 255, 255, 0),
-    1px 1px 0 rgba(255, 255, 255, 0);
+  color: var(--color-black);
+  background-color: var(--color-accent-2);
+  text-shadow: none;
 }
 
 #text-3:hover {
-  color: rgb(0, 0, 0);
-  background-color: #0acf8381;
-  text-shadow: -1px -1px 0 rgba(255, 255, 255, 0),
-    1px -1px 0 rgba(255, 255, 255, 0), -1px 1px 0 rgba(255, 255, 255, 0),
-    1px 1px 0 rgba(255, 255, 255, 0);
+  color: var(--color-black);
+  background-color: var(--color-accent-3);
+  text-shadow: none;
 }
 
 #text-4:hover {
-  color: rgb(0, 0, 0);
-  background-color: #1abdfe81;
-  text-shadow: -1px -1px 0 rgba(255, 255, 255, 0),
-    1px -1px 0 rgba(255, 255, 255, 0), -1px 1px 0 rgba(255, 255, 255, 0),
-    1px 1px 0 rgba(255, 255, 255, 0);
+  color: var(--color-black);
+  background-color: var(--color-accent-4);
+  text-shadow: none;
 }
 
 .content-hero {
   display: flex;
   text-align: start;
-  font-size: 2rem; /* Tamanho da fonte ajustado para ser mais flexível */
+  font-size: 2.7rem;
 }
 
 .text-primary {
@@ -154,8 +169,9 @@ html {
   font-weight: 300;
 }
 
+/* PROJECTS */
 .text-title-projects h3 {
-  color: gray;
+  color: var(--color-gray);
   font-size: 16px;
   font-weight: 300;
   padding-bottom: 24px;
@@ -165,14 +181,13 @@ html {
 .project-card {
   display: flex;
   flex-direction: row;
-  /* Altura fixa removida */
   height: auto;
   gap: 1rem;
   margin-bottom: 3rem;
   border-radius: 12px;
   overflow: hidden;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
-  background-color: #fff;
+  box-shadow: var(--shadow-light);
+  background-color: var(--color-white);
   transition: transform 0.3s, box-shadow 0.3s;
 }
 
@@ -186,7 +201,7 @@ html {
 
 .project-card:hover {
   transform: translateY(-5px);
-  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.12);
+  box-shadow: var(--shadow-hover);
 }
 
 .project-img img {
@@ -209,29 +224,29 @@ html {
   font-family: var(--font-primary);
   margin-bottom: 0.75rem;
   font-size: 1.5rem;
-  color: #111;
+  color: var(--color-black);
 }
 
 .project-info p {
   font-family: var(--font-secondary);
-  color: #222222;
+  color: var(--color-black);
   line-height: 1.6;
   margin-bottom: 1rem;
 }
 
 .project-info a {
   text-decoration: none;
-  color: #239261;
+  color: var(--color-green);
   font-weight: 600;
   align-self: flex-start;
 }
 
+/* FOOTER */
 .footer {
-  border-top: #bdbdbd42 1px solid;
+  border-top: var(--color-border) 1px solid;
   margin-top: 120px;
-  /* Altura fixa removida */
   height: auto;
-  padding: 60px 0; /* Adicionado padding para espaçamento */
+  padding: 60px 0;
   display: flex;
   justify-content: center;
 }
