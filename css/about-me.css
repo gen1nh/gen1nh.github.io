@@ -205,11 +205,3 @@
   font-size: 0.9rem;
   padding: 0;
 }
-
-/* RESPONSIVO */
-@media (max-width: 900px) {
-  .experience-content {
-    flex-direction: column;
-    gap: 48px;
-  }
-}
