@@ -37,32 +37,18 @@
 .main-wrapper {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 32px 24px;
-}
-
-/* SEÇÕES DE FUNDO */
-.section-black {
-  background-color: var(--color-black);
-  color: var(--color-white);
-  width: 100%;
-}
-
-.section-white {
-  background-color: var(--color-white);
-  color: var(--color-black);
-  width: 100%;
 }
 
 /* NAVIGATION */
 .navigation {
   margin-bottom: 64px;
+  background-color: #111;
 }
 
 .nav {
   display: flex;
   justify-content: flex-end;
   gap: 32px;
-  padding: 24px 0;
   font-weight: 500;
 }
 
