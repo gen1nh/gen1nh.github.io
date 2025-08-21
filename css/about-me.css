@@ -194,6 +194,9 @@
   display: block;
 }
 
+.experience-desc.collapsed {
+  display: none;
+}
 .toggle-desc {
   background: none;
   border: none;
